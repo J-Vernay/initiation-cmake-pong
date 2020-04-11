@@ -34,7 +34,7 @@ void Game::init() noexcept {
     ball.speed = Ball::INIT_SPEED;
 }
 
-static float posY_intersectX(float x, SDL_FPoint from, SDL_FPoint to) {
+float posY_intersectX(float x, SDL_FPoint from, SDL_FPoint to) {
     float a = (from.y - to.y) / (from.x - to.x);
     float b = from.y - a * from.x;
     return a * x + b;

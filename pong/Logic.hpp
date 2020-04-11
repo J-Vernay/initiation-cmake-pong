@@ -10,6 +10,8 @@
 
 float getRandomAngle() noexcept;
 
+float posY_intersectX(float x, SDL_FPoint from, SDL_FPoint to);
+
 struct Ball {
     static SDL_FPoint const SPAWN;
     static float const RADIUS;
